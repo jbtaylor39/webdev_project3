@@ -1,23 +1,16 @@
-function initMap(){
-    alert('it works');
-}
-
-google.maps.event.addDomListener(window, 'load', init);
-
 
 function initMap() {
-  const myLatLng = {lat: 41.8386867, lng: -87.6276365};
   const map = new google.maps.Map(document.getElementById("googleMap"), {
     zoom: 4,
-    center: myLatLng,
+    center: {lat: 41.8386867, lng: -87.6276365},
   });
-
-  new google.maps.Marker({
-    position: myLatLng,
+  const image =
+    "C:\Users\juant\Documents\Repo\ITMD361\webdev_project3\images\x-flight.jpg";
+  const beachMarker = new google.maps.Marker({
+    position: { lat: 41.8386867, lng: -87.6276365 },
     map,
-    title: "Hello World!",
+    icon: image,
   });
 }
-
 
 window.initMap = initMap;
