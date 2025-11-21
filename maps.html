@@ -7,8 +7,8 @@
     <title>Home Page</title>
     <link href='https://fonts.googleapis.com/css?family=Devonshire' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script async src="Javascript/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <script async src="script.js"></script>
   </head>
 
 
@@ -28,34 +28,16 @@
     </header>
 
     <main>
-      <div id="map"></div>
-    </main><!--style="width:100%;height:400px;">-->
+      <div id="myMap" style="width:100%;height:400px;"></div>
+      <div id="entrybutton">Let Me Know!</div>
+    </main>
 
     <footer id="footer">
       <p>Go and look at the other pages!</p>
     </footer>
-
-    <!--<script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById("googleMap"), {
-          center: { lat: 41.8386867, lng: -87.6276365 },
-          zoom: 18,
-        };)
-
-
-        var marker = new google.maps.Marker({
-          position: { lat: 41.8386867, lng: -87.6276365 },
-          map: map,
-          title: 'Hello world',
-          icon: 'x-flight.jpg'
-        })
-      }
-    </script>-->
-
-
+    
     <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap&callback=initMap" async defer></script>
-    <script scr="script.js"></script>
+    <script src="script.js"></script>
   </body>
 
 </html>
