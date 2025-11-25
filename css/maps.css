@@ -78,36 +78,3 @@ strong {
   font-weight: bold;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-      background-image: url("../images/background2.jpg");
-  }
-}
-
-@media screen and (min-width: 800px) {
-  body {
-      background-image: url("../images/background3.jpg");
-  }
-}
-
-@media screen and (min-width: 800px) {
-  #main-nav {
-    background-color: #757575;}
-}
-
-@media screen and (max-width: 500px) {
-  #main-nav {
-    background-color: #000000;}
-}
-
-@media screen and (max-width: 500px) {
-  #header h1 {
-    color: #3e3ee3;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  #header h1 {
-    color: #000;
-    }
-}
