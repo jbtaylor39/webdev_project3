@@ -10,7 +10,8 @@
     padding: 0;
     float: left;
     position: relative;
-    left:50%;}
+    left:50%;
+    display: flex;}
 
 
 #main-nav ul li{   
@@ -68,4 +69,8 @@ strong {
   .menu {grid-area: 2 / span 1;}
   .content {grid-area: 2 / span 4;}
   .footer {grid-area: 3 / span 6;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  ul {flex-direction: column;}
 }

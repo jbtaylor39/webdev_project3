@@ -10,7 +10,8 @@
     padding: 0;
     float: left;
     position: relative;
-    left:50%;}
+    left:50%;
+    display: flex;}
 
 
 #main-nav ul li{   
@@ -63,11 +64,14 @@ strong {
     font-weight: 30;
     font-size: 20px;}
 
-@media (min-width: 600px) {
-  .header {grid-area: 1 / span 6;}
-  .menu {grid-area: 2 / span 1;}
-  .content {grid-area: 2 / span 4;}
-  .footer {grid-area: 3 / span 6;}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+      background-image: url("../images/background2.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  ul {flex-direction: column;}
 }
 
 #entrybutton {
